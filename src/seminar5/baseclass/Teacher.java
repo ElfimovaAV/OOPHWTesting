@@ -2,12 +2,12 @@ package seminar5.baseclass;
 
 import java.io.Serializable;
 
-public class Student implements Human, Serializable {
+public class Teacher implements Human, Serializable {
     private String name;
     private String patronymic;
     private String surname;
 
-    protected Student(String name, String patronymic, String surname) {
+   public Teacher(String name, String patronymic, String surname) {
         this.name = name;
         this.patronymic = patronymic;
         this.surname = surname;
