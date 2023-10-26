@@ -1,43 +1,16 @@
 package seminar5;
 
-abstract class Human {
-    String name;
-    String patronymic;
-    String surname;
+interface Human {
 
-    protected Human(String name, String patronymic, String surname) {
-        this.name = name;
-        this.patronymic = patronymic;
-        this.surname = surname;
-    }
+    public String getName();
 
-    public String getName() {return name;}
+    public String getPatronymic();
 
-    public String getPatronymic() {
-        return patronymic;
-    }
+    public String getSurname();
 
-    public String getSurname() {
-        return surname;
-    }
+    public void setName(String name);
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setSurname(String surname);
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
-    }
-
-    @Override
-    public String toString() {
-        return "Teacher: " +
-                "name:'" + name + '\'' +
-                ", patronymic:'" + patronymic + '\'' +
-                ", surname='" + surname + '\'';
-    }
+    public void setPatronymic(String patronymic);
 }
